@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+ - name: data
+   database: go-cxb-bcx-data9-p02dt9p01-poc
+   schema: mpi_dbt_monitoring
+   tables:
+   - name: py_data
+     columns:
+       - name: name
+         description: person name
+         tests: 
+           - unique
+           
+
+
+
+
+models:
+ - name: sqltest
+   columns: 
+     - name: nombres
+       description: person name
+       tests: 
+         - unique

@@ -1,0 +1,12 @@
+steps:
+- name: 'docker'
+  args: [ 'build', '-t', 'europe-west4-docker.pkg.dev/go-cxb-bcx-data9-p02dt9p01-poc/datanow-dbt-core/mpi_dbt:0.0.1', '.' ]
+
+ 
+
+images:
+  - 'europe-west4-docker.pkg.dev/go-cxb-bcx-data9-p02dt9p01-poc/datanow-dbt-core/mpi_dbt'
+
+ 
+
+tags: ['gcp-lineage-composer-dbt']

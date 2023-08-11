@@ -9,7 +9,7 @@ WITH CTE AS (
      SELECT
       name AS nombres,
       COUNT(name) AS frecuencia,
-        AVG(age) AS media,
+        SUM(age) AS suma,
        MIN(age) AS joven,
        MAX(age) AS mayor
 

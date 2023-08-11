@@ -1,0 +1,13 @@
+dbt_monitoring_test:
+  target: dev
+  outputs:
+    dev:
+      dataset: mpi_dbt_monitoring
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: europe-southwest1
+      method: oauth
+      priority: interactive
+      project: go-cxb-bcx-data9-p02dt9p01-poc
+      threads: 1
+      type: bigquery

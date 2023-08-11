@@ -1,0 +1,9 @@
+version: 2
+
+
+           
+
+
+models:
+ - name: prueba_ddl
+   +target_schema: ddl
